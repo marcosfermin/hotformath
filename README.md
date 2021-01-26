@@ -1,5 +1,5 @@
 ![HotForMath](img/logo.png)
-# A search engine for naked (open) directories in the entire internet.
+# A search engine for naked (open) directories on the entire internet.
 
 ## Developed by [Marcos Fermin](https://marcosfermin.com)
 
