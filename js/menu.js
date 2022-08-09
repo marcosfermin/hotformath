@@ -6,12 +6,12 @@
     var subMenuItem = $("#dropdown-menu li")
     var searchButton = $('#search-button')
     var searchBox = $('#search-box')
-
-
+    
+    
 $(window).resize(function(){
-	if ($(window).width() <= 750){
+	if ($(window).width() <= 750){	
 		searchButton.text("Search")
-        searchButton.append(' <i class="fal fa-search">');
+        searchButton.append(' <i class="fal fa-search">'); 
 	} else {
         searchButton.text("")
         searchButton.append(' <i class="fal fa-search">');
@@ -60,7 +60,7 @@ $(document).ready(function() {
 $(document).ready(function() {
   searchBox.val("");
   searchBox.focus();
-
+    
   searchButton.click(function() {
     var type = button.val();                                                            // Set the type valriable to the value of the button.
     var query = searchBox.val();                                                        // Set the Query variable to the value of the text box.
@@ -71,7 +71,7 @@ $(document).ready(function() {
     if (query[query.length - 1] == ',') {                                               // Check the length of the search term to see if there were
       query = query.slice(0, -1)                                                            // multiple search terms used, then slice the string at
     }                                                                                       // every comma.
-    arr = query.split(',');
+    arr = query.split(',');                                                                         
     arr.push(',');
     switch (type) {                                                                     // Compare the type that was set earlier with the cases below
       case ("Video"):
@@ -121,7 +121,7 @@ $(document).ready(function() {
         var goodinput = "intext:\"" + last + "\"";
         var finalquery = goodinput + extensions + commonToAll;
 
-        var url = "https://search.hotformath.com/search?q=" + encodeURIComponent(finalquery);
+        var url = "https://www.google.com/search?q=" + encodeURIComponent(finalquery);
         //alert(goodinput);
         window.open(url, '_blank');
       }
